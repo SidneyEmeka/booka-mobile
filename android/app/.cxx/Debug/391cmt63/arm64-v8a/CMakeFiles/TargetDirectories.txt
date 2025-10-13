@@ -1,0 +1,2 @@
+C:/Users/HP/Desktop/Visual studio/Flutter/booka/android/app/.cxx/Debug/391cmt63/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/HP/Desktop/Visual studio/Flutter/booka/android/app/.cxx/Debug/391cmt63/arm64-v8a/CMakeFiles/rebuild_cache.dir

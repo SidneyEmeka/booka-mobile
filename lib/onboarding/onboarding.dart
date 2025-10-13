@@ -33,7 +33,7 @@ class _OnboardingState extends State<Onboarding> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Align(
-              alignment: Alignment(1, 0),//like in a graph sheet
+              alignment: Alignment(1.0, 0),//like in a graph sheet
               child: Text(
                   'Skip',
                   style: Stylings.bodyMediumLargest

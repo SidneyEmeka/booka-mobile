@@ -1,31 +1,26 @@
 import 'dart:async';
-
 import 'package:booka/onboarding/onboarding.dart';
 import 'package:booka/stylings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
-
-
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-
 class _SplashScreenState extends State<SplashScreen> {
-
   @override
   void initState() {
-    Timer(Duration(seconds: 3),() {
-     Get.offAll(()=>const Onboarding());
+    Timer(const Duration(seconds: 3), () {
+      Get.offAll(() => const Onboarding());
     });
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Spacer(),//for relative spacing
+            const Spacer(), //for relative spacing
             SizedBox(
               width: Get.width * 0.26,
               height: Get.height * 0.14,
@@ -49,17 +44,10 @@ class _SplashScreenState extends State<SplashScreen> {
                 fit: BoxFit.cover,
               ),
             ),
-            Text(
-              'Booka',
-              style: Stylings.displayBold
-            ),
+            Text('Booka', style: Stylings.displayBold),
             const Spacer(),
-            Text(
-              'Smart Textbook Access for \nUniversity Students',
-              textAlign: TextAlign.center,
-              style: Stylings.displayBoldSmall
-            ),
-
+            Text('Smart Textbook Access for \nUniversity Students',
+                textAlign: TextAlign.center, style: Stylings.displayBoldSmall),
           ],
         ),
       ),
