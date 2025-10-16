@@ -5,6 +5,9 @@ import 'package:booka/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
+import 'home_page.dart';
+import 'login/select_uni.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -23,7 +26,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         scaffoldBackgroundColor: Color(0xFFFAFAFA)
       ),
-      home: const SignInPage(),
+      home: const HomePage(),
     );
   }
 }
