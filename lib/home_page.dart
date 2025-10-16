@@ -16,11 +16,10 @@ class HomePage extends StatelessWidget {
           height: Get.height,
           width: Get.width,
           child: Column(
-
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.end ,
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,12 +32,14 @@ class HomePage extends StatelessWidget {
                         )
                       ]),
                   Container(
-                  width: Get.width * 0.16,
+                      width: Get.width * 0.16,
                       height: Get.height * 0.10,
                       decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50)
-                  ),
-                      child: Image(image: AssetImage('assets/images/face.png'), fit: BoxFit.contain,))
+                          borderRadius: BorderRadius.circular(50)),
+                      child: Image(
+                        image: AssetImage('assets/images/face.png'),
+                        fit: BoxFit.contain,
+                      ))
                 ],
               ),
               Spacer(),
@@ -94,8 +95,11 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Align(
-                    alignment: Alignment.topLeft,
-                      child: Text('Top Picks', style: Stylings.bodyRegularLargest,)),
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        'Top Picks',
+                        style: Stylings.bodyRegularLargest,
+                      )),
                   BookTiles(
                       BookCover: AssetImage('assets/images/bookcover.png'),
                       BookName: 'Other side of the River',
@@ -116,22 +120,28 @@ class HomePage extends StatelessWidget {
                       Love: AssetImage('assets/images/love.png')),
                 ],
               ),
-
-
             ],
           ),
         ),
-
-      ), bottomNavigationBar: BottomNavigationBar( backgroundColor: Colors.lightGreen,
-        iconSize: 20,
-        items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: 'Home'),
-      BottomNavigationBarItem(icon: Icon(Icons.favorite_border,), label: 'Wishlist'),
-      BottomNavigationBarItem(icon: Icon(Icons.search_rounded), label: 'Search'),
-      BottomNavigationBarItem(icon: Icon(Icons.shopping_cart), label: 'Cart'),
-      BottomNavigationBarItem(icon: Icon(Icons.person_3_rounded), label: 'Profile'),
-
-    ]),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Colors.lightGreen,
+          iconSize: 20,
+          items: [
+            BottomNavigationBarItem(
+                icon: Icon(Icons.home_filled), label: 'Home'),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.favorite_border,
+                ),
+                label: 'Wishlist'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.search_rounded), label: 'Search'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.shopping_cart), label: 'Cart'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.person_3_rounded), label: 'Profile'),
+          ]),
     );
   }
 }

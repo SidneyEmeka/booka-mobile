@@ -10,14 +10,14 @@ class Tiles extends StatelessWidget {
   final double Tileheight;
   final Color Tilecolor;
   final String label;
-  final ImageProvider image;
+  final ImageProvider? image;
 
   const Tiles(
       {super.key,
       required this.Tilewidth,
       required this.Tileheight,
       required this.label,
-      required this.image,
+      this.image,
       required this.Tilecolor});
 
   @override
@@ -36,17 +36,18 @@ class Tiles extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          SizedBox(
-            height: 18,
-            width: 18,
-            child: Image(
-              image: image,
-              fit: BoxFit.contain,
-            ),
-          ),
+          // SizedBox(
+          //   height: 18,
+          //   width: 18,
+          //   child:
+          //   Image(
+          //     image: image,
+          //     fit: BoxFit.contain,
+          //   ),
+          // ),
           Text(label,
               style: Stylings.bodyRegularLarge.copyWith(
-                color: Stylings.priGray,
+                color: Colors.black,
                 fontSize: 15,
               )),
         ],

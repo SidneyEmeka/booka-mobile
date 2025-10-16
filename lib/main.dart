@@ -1,10 +1,17 @@
+import 'package:booka/forgot_password.dart';
 import 'package:booka/login/sign_in.dart';
 import 'package:booka/onboarding/onboarding.dart';
 import 'package:booka/login/sign_up.dart';
+import 'package:booka/order_history.dart';
+import 'package:booka/profile.dart';
+import 'package:booka/reusables/book_card.dart';
+import 'package:booka/search_screen.dart';
 import 'package:booka/splash_screen.dart';
+import 'package:booka/wishlist.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
+import 'edit_profile.dart';
 import 'home_page.dart';
 import 'login/select_uni.dart';
 
@@ -26,7 +33,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         scaffoldBackgroundColor: Color(0xFFFAFAFA)
       ),
-      home: const HomePage(),
+      home: const ForgotPassword(),
     );
   }
 }
